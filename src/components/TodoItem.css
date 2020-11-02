@@ -1,0 +1,52 @@
+.todo-item {
+    display: grid;
+    grid-template-columns: auto 20px;
+    background: #f4f4f4;
+    margin-bottom: 5px; 
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    background: white;
+}
+
+.todo-task {
+    overflow: hidden;
+    word-wrap:break-word;
+    /* word-wrap:break-all; */
+}
+
+.item-icon {
+    color: red;
+    color: #333;
+}
+
+.todo-item i {
+    cursor: pointer;
+}
+
+/* For Task-Bar */
+.task-bar label, .task-bar input {
+    display: block;
+}
+
+.task-bar input {
+    margin-top: 10px;
+    height: 26px;
+    width: 50%; 
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+    border-radius: 5px;
+    border: 1px solid rgba(34,36,38,.15);
+}
+
+@media screen and (max-width: 720px) {
+    .task-bar input {
+        width: 70%; 
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .task-bar input {
+        width: 80%; 
+    }
+}
